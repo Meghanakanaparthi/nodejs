@@ -3,55 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Storefront - Home</title>
+    <title>E-book Library - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo"><a href="index.html">ShopEase</a></div>
-        <nav class="nav-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="catalogue.html">Catalogue</a>
-            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
-            <a href="login.html">Login</a>
-            <a href="register.html" class="btn-primary">Register</a>
+    <header>
+        <div class="logo">
+            <div class="c">&#x1F4DA;</div>
+            <h2>E-book Library</h2>
+            <div class="s"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <h1>Elevate Your Everyday Style</h1>
-                <p>Discover our curated collection of premium essentials designed for modern living.</p>
-                <a href="catalogue.html" class="btn-large">Explore Catalogue</a>
+            <div>
+                <h1>Welcome Meghana</h1>
+                <p>Manage and read e-books online</p>
+                <a class="btn" href="catalog.html">Explore</a>
             </div>
+            <img src="./images/hero.jpg" alt="E-book Library Showcase">
         </section>
 
-        <section class="featured">
-            <h2>Featured Categories</h2>
-            <div class="grid-3">
-                <div class="card category-card">
-                    <img src="https://via.placeholder.com/400x300/e0e7ff/3730a3?text=Electronics" alt="Electronics">
-                    <h3>Electronics</h3>
-                    <a href="catalogue.html?cat=electronics" class="link-btn">Shop Now &rarr;</a>
-                </div>
-                <div class="card category-card">
-                    <img src="https://via.placeholder.com/400x300/fce7f3/9d174d?text=Apparel" alt="Apparel">
-                    <h3>Apparel & Fashion</h3>
-                    <a href="catalogue.html?cat=apparel" class="link-btn">Shop Now &rarr;</a>
-                </div>
-                <div class="card category-card">
-                    <img src="https://via.placeholder.com/400x300/ecfdf5/065f46?text=Home+%26+Living" alt="Home & Living">
-                    <h3>Home & Living</h3>
-                    <a href="catalogue.html?cat=home" class="link-btn">Shop Now &rarr;</a>
-                </div>
-            </div>
+        <section class="feature">
+            <div class="card">History books</div>
+            <div class="card">Fictional</div>
+            <div class="card">Non-Fictional</div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; E-BOOK MANAGEMENT 25WH1A05R0</p>
+        <p>&copy; 2026 E-book Management | Copyright Meghana</p>
     </footer>
-    <script src="app.js"></script>
 </body>
 </html>
