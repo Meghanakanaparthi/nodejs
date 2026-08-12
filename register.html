@@ -3,61 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-book Library - Register</title>
+    <title>Storefront - Create Account</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <div class="c">&#x1F4DA;</div>
-            <h2>E-book Library</h2>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html" class="active">Register</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
+    <header class="navbar">
+        <div class="logo"><a href="index.html">ShopEase</a></div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="btn-primary active">Register</a>
         </nav>
     </header>
 
-    <main class="center">
-        <form class="form" action="#" method="POST">
-            <h2>Register</h2>
+    <main class="auth-container">
+        <div class="auth-card">
+            <h2>Create Account</h2>
+            <p class="auth-subtitle">Join us today to get full access to orders & wishlist.</p>
+            
+            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Account registered successfully!');">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" required placeholder="John Doe">
+                </div>
 
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="you@example.com">
+                </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required placeholder="••••••••">
+                </div>
 
-            <label for="mobile">Mobile Number</label>
-            <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" required placeholder="••••••••">
+                </div>
 
-            <label for="gender">Gender</label>
-            <select id="gender" name="gender" required>
-                <option value="" disabled selected>Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
+                <div class="form-actions">
+                    <label class="checkbox-label">
+                        <input type="checkbox" required> I agree to the <a href="#">Terms & Conditions</a>
+                    </label>
+                </div>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit" class="btn-primary btn-block">Create Account</button>
+            </form>
 
-            <label for="address">Address</label>
-            <textarea id="address" name="address" rows="3" placeholder="Address"></textarea>
-
-            <button type="submit">Register</button>
-
-            <p>Already registered? <a href="login.html">Login</a></p>
-        </form>
+            <div class="auth-footer">
+                <p>Already have an account? <a href="login.html">Sign in</a></p>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 E-Book Management System | Copyright 25WH1A05R0</p>
+        <p>&copy; 25whla05r0</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
